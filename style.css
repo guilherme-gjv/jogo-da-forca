@@ -11,3 +11,7 @@
   border: none;
   border-radius: 1rem;
 }
+
+.borda-da-vez {
+  border: solid black 2px;
+}
