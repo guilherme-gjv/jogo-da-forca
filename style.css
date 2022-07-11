@@ -4,19 +4,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-#flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#tabuleiro {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-  gap: 0.3rem;
-}
-
 #tabuleiro button {
   background-color: brown;
   height: 7rem;
@@ -27,4 +14,26 @@
 
 .borda-da-vez {
   border: solid black 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #placar {
+    display: flex;
+    gap: 2rem;
+  }
+  #tabuleiro {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.3rem;
+    justify-content: center;
+  }
+  #tabuleiro button {
+    height: 5rem;
+    width: 5rem;
+  }
 }
