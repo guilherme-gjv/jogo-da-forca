@@ -2,12 +2,19 @@ function reiniciar() {
   for (let i = 0; i < botoes.length; i++) {
     botoes[i].innerText = "";
   }
-  atualizaStatus("");
+  vez = "X";
+  atualizaStatus(" ");
 }
 
 function atualizaStatus(texto) {
-  let status = document.getElementById("status");
-  status.innerText = texto;
+  if (texto) {
+    let status = document.getElementById("status");
+    status.innerText = texto;
+  }
+
+  document.getElementById("placarX").innerText = placarX;
+  document.getElementById("placarO").innerText = placarO;
+  document.getElementById("jogadorVez").innerHTML = vez;
 }
 
 function verificaVitoriaHorizontal() {
@@ -88,6 +95,11 @@ function verificaVitoria() {
   let vitoriaV = verificaVitoriaVertical();
   let vitoriaD = verificaVitoriaDiagonal();
   if (vitoriaH == true || vitoriaV == true || vitoriaD == true) {
+    if (vez == "X") {
+      placarX++;
+    } else if (vez == "O") {
+      placarO++;
+    }
     atualizaStatus(vez + " GANHOU!");
   } else {
     let velha = verificaDeuVelha();
@@ -117,12 +129,15 @@ function botao(numeroDoBotao) {
     botoes[numeroDoBotao].innerText = vez;
     verificaVitoria();
     trocarVez();
+    atualizaStatus();
   }
 }
 
 var botoes = [];
 gerarVetorDeBotoes();
-
+var placarX = 0;
+var placarO = 0;
 var vez = "X";
+atualizaStatus(" ");
 
 console.log(botoes);
