@@ -4,7 +4,20 @@
   font-family: "Roboto", sans-serif;
 }
 
-#tabuleiro div button {
+#flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#tabuleiro {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+#tabuleiro button {
   background-color: brown;
   height: 7rem;
   width: 7rem;
