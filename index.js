@@ -12,9 +12,18 @@ function atualizaStatus(texto) {
     status.innerText = texto;
   }
 
-  document.getElementById("placarX").innerText = placarX;
-  document.getElementById("placarO").innerText = placarO;
-  document.getElementById("jogadorVez").innerHTML = vez;
+  let textPlacarX = document.getElementById("placarX");
+  let textPlacarO = document.getElementById("placarO");
+  textPlacarX.innerText = placarX;
+  textPlacarO.innerText = placarO;
+  console.log("class name " + document.getElementById("placarX").className);
+  if (vez == "X") {
+    document.getElementById("divPlacarX").className = "borda-da-vez";
+    document.getElementById("divPlacarO").className = "";
+  } else if (vez == "O") {
+    document.getElementById("divPlacarO").className = "borda-da-vez";
+    document.getElementById("divPlacarX").className = "";
+  }
 }
 
 function verificaVitoriaHorizontal() {
