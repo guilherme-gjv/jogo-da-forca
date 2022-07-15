@@ -1,22 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Roboto+Mono&display=swap");
 
 * {
   /*font-family: "Roboto", sans-serif;*/
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
-#tabColor{
+#tabColor {
   position: relative;
   padding: 10px;
-  background: rgb(0,128,246);
-  background: linear-gradient(0deg, rgba(0,128,246,1) 0%, rgba(255,0,0,1) 100%);
+  background: rgb(0, 128, 246);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 128, 246, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
   border-radius: 1rem;
   height: 300px;
   width: 300px;
 }
 
-#tabuleiro{
+#info {
+  display: flex;
+}
+
+#tabuleiro {
   justify-items: center;
 }
 
@@ -29,10 +37,10 @@
   margin: 3px 5px;
 }
 
-#status{
+#status {
   display: block;
   margin-left: 140px;
-  width: 6em
+  width: 6em;
 }
 
 .borda-da-vez {
@@ -50,20 +58,21 @@
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  #divPlacarX, #divPlacarO {
+  #divPlacarX,
+  #divPlacarO {
     border-radius: 10px;
     padding: 10px;
     text-align: center;
     color: white;
   }
-  #divPlacarX{
-    background-color: #1263FF;
+  #divPlacarX {
+    background-color: #1263ff;
   }
   #divPlacarO {
     background-color: #e22929;
   }
   #reiniciar {
-    background-color: #00FFFF;
+    background-color: #00ffff;
     border: 1px solid gainsboro;
     border-radius: 10px;
     width: 6rem;
@@ -94,20 +103,21 @@
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  #divPlacarX, #divPlacarO {
+  #divPlacarX,
+  #divPlacarO {
     border-radius: 10px;
     padding: 10px;
     text-align: center;
     color: white;
   }
-  #divPlacarX{
-    background-color: #1263FF;
+  #divPlacarX {
+    background-color: #1263ff;
   }
   #divPlacarO {
     background-color: #e22929;
   }
   #reiniciar {
-    background-color: #00FFFF;
+    background-color: #00ffff;
     border: 1px solid gainsboro;
     border-radius: 10px;
     width: 6rem;
