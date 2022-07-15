@@ -6,4 +6,4 @@
 
 ### Acesse esse link para jogar o [Jogo da Velha](https://guilherme-gjv.github.io/jogo-da-velha/) no Github Pages
 
-por Guilherme de Jesus, Náthally & Jessé Diego 
+por [Guilherme de Jesus](https://github.com/guilherme-gjv), [Náthally Alves](https://github.com/nathylla5) & [Jessé Diego](https://github.com/jezzdiego). (923, 922, 923)
