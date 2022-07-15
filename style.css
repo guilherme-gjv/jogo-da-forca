@@ -80,6 +80,7 @@
   #tabuleiro button {
     height: 5rem;
     width: 5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -124,5 +125,6 @@
   #tabuleiro button {
     height: 5rem;
     width: 5rem;
+    font-size: 3.5rem;
   }
 }
