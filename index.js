@@ -4,6 +4,13 @@ function reiniciar() {
   }
   vez = "X";
   atualizaStatus(" ");
+  desabilitarBotoes(false);
+}
+
+function desabilitarBotoes(desabilitar) {
+  for (let i = 0; i < botoes.length; i++) {
+    botoes[i].disabled = desabilitar || false;
+  }
 }
 
 function atualizaStatus(texto) {
@@ -110,10 +117,12 @@ function verificaVitoria() {
       placarO++;
     }
     atualizaStatus(vez + " GANHOU!");
+    desabilitarBotoes(true);
   } else {
     let velha = verificaDeuVelha();
     if (velha == true) {
       atualizaStatus("Deu velha!");
+      desabilitarBotoes(true);
     }
   }
 }
